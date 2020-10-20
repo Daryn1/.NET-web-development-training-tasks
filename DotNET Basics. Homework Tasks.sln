@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCodingInCSharpTests", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCodingInCSharp", "BasicCodingInCSharp\BasicCodingInCSharp.csproj", "{44822164-D5C7-480C-B8D0-1816E39B11CB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creating types in CSharp", "Creating types in CSharp\Creating types in CSharp.csproj", "{110FC0BE-35FF-40BA-91E5-57AD5D17D4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creating types in CSharp Tests", "Creating types in CSharp Tests\Creating types in CSharp Tests.csproj", "{1BE9D01E-5A91-40EC-A7C9-2E1C1903ABF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{44822164-D5C7-480C-B8D0-1816E39B11CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44822164-D5C7-480C-B8D0-1816E39B11CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44822164-D5C7-480C-B8D0-1816E39B11CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110FC0BE-35FF-40BA-91E5-57AD5D17D4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110FC0BE-35FF-40BA-91E5-57AD5D17D4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110FC0BE-35FF-40BA-91E5-57AD5D17D4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110FC0BE-35FF-40BA-91E5-57AD5D17D4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE9D01E-5A91-40EC-A7C9-2E1C1903ABF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE9D01E-5A91-40EC-A7C9-2E1C1903ABF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE9D01E-5A91-40EC-A7C9-2E1C1903ABF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE9D01E-5A91-40EC-A7C9-2E1C1903ABF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
