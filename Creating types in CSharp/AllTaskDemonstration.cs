@@ -23,6 +23,7 @@ namespace Creating_types_in_CSharp
             Console.WriteLine($"The root of {3}-degree from the number {8} is {root}");
 
             // Demonstration of the solution of the second task.
+            Console.WriteLine("------------ Second task ------------");
             var array = new int[][]
             {
                 new[] { 11, 34, 67, -89, 8 },
