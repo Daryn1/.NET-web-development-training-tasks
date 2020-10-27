@@ -3,7 +3,7 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharp
+namespace Basic_coding_in_CSharp
 {
     using System;
 

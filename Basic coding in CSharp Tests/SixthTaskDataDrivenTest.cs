@@ -3,14 +3,14 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharpTests
+namespace Basic_coding_in_CSharp_Tests
 {
     using System;
     using System.Collections.Generic;
     using System.Data.OleDb;
     using System.IO;
     using System.Linq;
-    using BasicCodingInCSharp;
+    using Basic_coding_in_CSharp;
     using NUnit.Framework;
 
     /// <summary>
@@ -72,6 +72,7 @@ namespace BasicCodingInCSharpTests
             }
         }
 
+        
         /// <summary>
         /// Contains the method ReadExcelData that converts every row from the excel file to a TestCaseData. Taken from here:
         /// https://stackoverflow.com/questions/44260816/c-sharp-nunit-3-data-driven-from-excel

@@ -3,10 +3,10 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharpTests
+namespace Basic_coding_in_CSharp_Tests
 {
     using System;
-    using BasicCodingInCSharp;
+    using Basic_coding_in_CSharp;
     using NUnit.Framework;
 
     /// <summary>
@@ -22,7 +22,9 @@ namespace BasicCodingInCSharpTests
         /// <param name="inputArray">Input array of integers.</param>
         /// <param name="digitForFiltering">Digit used for filtering.</param>
         /// <returns>Returns the array of numbers that contain the given digit.</returns>
-        [TestCase(new[] { 7, 1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17 }, 7, ExpectedResult = new[] { 7, 7, 70, 17 })]
+        [TestCase(new int[] { 7, 1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17 }, 7, ExpectedResult = new int[] { 7, 7, 70, 17 })]
+        [TestCase(new int[] { 7, 1, 2, 3, 4, 5, 6, 7, 68, -69, 70, 15, 17 }, 6, ExpectedResult = new int[] { 6, 68, -69 })]
+        [TestCase(new int[] { 7, 1, 2, 3, 4, 5, 6, 7, 68, -69, 70, 15, 17 }, 9, ExpectedResult = new int[] { -69 })]
         [TestCase(new[] { -777, -786, -117, 0, -24, -12, -17, -7 }, 7, ExpectedResult = new[] { -777, -786, -117, -17, -7 })]
         [TestCase(new[] { 1, 21, 441, 0, 4, 2, 232313232, 33221 }, 1, ExpectedResult = new[] { 1, 21, 441, 232313232, 33221 })]
         [TestCase(new[] { -1234567, -51, -16, -111117 }, 1, ExpectedResult = new[] { -1234567, -51, -16, -111117 })]

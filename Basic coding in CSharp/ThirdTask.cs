@@ -3,7 +3,7 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharp
+namespace Basic_coding_in_CSharp
 {
     using System;
     using System.Linq;
@@ -18,7 +18,7 @@ namespace BasicCodingInCSharp
         /// </summary>
         /// <param name="array">An array in which we find the index.</param>
         /// <returns>Returns the index of the element if one exists, and returns null if there is no such element.</returns>
-        public static double? FindElementOfEqualityOfLeftAndRightSides(double[] array)
+        public static int? FindElementOfEqualityOfLeftAndRightSides(double[] array)
         {
             // Check the sum of the left and right sides for every element from the first to the penultimate
             for (var i = 1; i < array.Length - 1; i++)
@@ -28,7 +28,7 @@ namespace BasicCodingInCSharp
 
                 if (Math.Abs(sumLeft - sumRight) < 0.001)
                 {
-                    return array[i];
+                    return i;
                 }
             }
 

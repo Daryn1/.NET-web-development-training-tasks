@@ -3,7 +3,7 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharp
+namespace Basic_coding_in_CSharp
 {
     using System;
 
@@ -38,7 +38,7 @@ namespace BasicCodingInCSharp
                 1.0, 2.0, 3.0, 3.0
             };
             var elementOfEqualityOfLeftAndRightSides = ThirdTask.FindElementOfEqualityOfLeftAndRightSides(arrayForSecondTask);
-            Console.WriteLine($"The element of equality of left and right sides of array [{string.Join(", ", arrayForSecondTask)}] is {elementOfEqualityOfLeftAndRightSides}");
+            Console.WriteLine($"The index of the element of equality of left and right sides of array [{string.Join(", ", arrayForSecondTask)}] is {elementOfEqualityOfLeftAndRightSides}");
 
             // Demonstration of the solution of the fourth task
             Console.WriteLine("------------ Fourth task ------------");

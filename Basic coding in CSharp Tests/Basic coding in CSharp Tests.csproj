@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BasicCodingInCSharp\BasicCodingInCSharp.csproj" />
+    <ProjectReference Include="..\Basic coding in CSharp\Basic coding in CSharp.csproj" />
   </ItemGroup>
 
 </Project>

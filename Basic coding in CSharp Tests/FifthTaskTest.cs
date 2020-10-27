@@ -3,9 +3,9 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharpTests
+namespace Basic_coding_in_CSharp_Tests
 {
-    using BasicCodingInCSharp;
+    using Basic_coding_in_CSharp;
     using NUnit.Framework;
 
     /// <summary>

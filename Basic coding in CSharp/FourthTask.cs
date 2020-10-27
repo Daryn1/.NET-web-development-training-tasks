@@ -3,9 +3,8 @@
 // </copyright>
 // <author>Daryn Akhmetov</author>
 
-namespace BasicCodingInCSharp
+namespace Basic_coding_in_CSharp
 {
-    using System;
     using System.Linq;
 
     /// <summary>
@@ -14,14 +13,15 @@ namespace BasicCodingInCSharp
     public class FourthTask
     {
         /// <summary>
-        /// Concatenates two strings that include only characters from 'a' to 'z'
+        /// Concatenates two strings, excluding duplicate characters.
         /// </summary>
         /// <param name="latinAlphabetString1">The first string that include only characters from 'a' to 'z'</param>
         /// <param name="latinAlphabetString2">The second string that include only characters from 'a' to 'z'</param>
         /// <returns>A concatenated string, excluding duplicate characters.</returns>
         public static string ConcatenateExcludingDuplicateCharacters(string latinAlphabetString1, string latinAlphabetString2)
         {
-            return new string(latinAlphabetString1.Union(latinAlphabetString2).ToArray());
+            return latinAlphabetString2.Where(character => !latinAlphabetString1.Contains(character))
+                .Aggregate(latinAlphabetString1, (current, character) => current + character);
         }
     }
 }
