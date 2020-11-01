@@ -72,7 +72,6 @@ namespace Basic_coding_in_CSharp_Tests
             }
         }
 
-        
         /// <summary>
         /// Contains the method ReadExcelData that converts every row from the excel file to a TestCaseData. Taken from here:
         /// https://stackoverflow.com/questions/44260816/c-sharp-nunit-3-data-driven-from-excel
@@ -94,35 +93,37 @@ namespace Basic_coding_in_CSharp_Tests
 
                 var connectionStr = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={excelFile};Extended Properties=\"Excel 12.0 Xml;HDR=YES\";";
                 var ret = new List<TestCaseData>();
-                using var connection = new OleDbConnection(connectionStr);
-                connection.Open();
-                var command = new OleDbCommand(cmdText, connection);
-                var reader = command.ExecuteReader();
-
-                if (reader == null)
+                using (var connection = new OleDbConnection(connectionStr))
                 {
-                    throw new Exception($"No data return from file, file name:{excelFile}");
-                }
+                    connection.Open();
+                    var command = new OleDbCommand(cmdText, connection);
+                    var reader = command.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    var fieldCount = reader.FieldCount;
-
-                    if (reader.GetValue(0).ToString() == string.Empty)
+                    if (reader == null)
                     {
-                        break;
+                        throw new Exception($"No data return from file, file name:{excelFile}");
                     }
 
-                    var inputArrayAsString = reader.GetValue(0).ToString().Split(", ");
-                    var digitForFiltering = int.Parse(reader.GetValue(1).ToString());
-                    var expectedResultAsString = reader.GetValue(2).ToString().Split(", ");
+                    while (reader.Read())
+                    {
+                        var fieldCount = reader.FieldCount;
 
-                    var inputArray = inputArrayAsString.Select(int.Parse).ToArray();
-                    var expectedResult = expectedResultAsString.Select(int.Parse).ToArray();
+                        if (reader.GetValue(0).ToString() == string.Empty)
+                        {
+                            break;
+                        }
 
-                    ret.Add(new TestCaseData(inputArray, digitForFiltering, expectedResult));
+                        var inputArrayAsString = reader.GetValue(0).ToString().Split(", ");
+                        var digitForFiltering = int.Parse(reader.GetValue(1).ToString());
+                        var expectedResultAsString = reader.GetValue(2).ToString().Split(", ");
+
+                        var inputArray = inputArrayAsString.Select(int.Parse).ToArray();
+                        var expectedResult = expectedResultAsString.Select(int.Parse).ToArray();
+
+                        ret.Add(new TestCaseData(inputArray, digitForFiltering, expectedResult));
+                    }
                 }
-
+                
                 return ret;
             }
         }

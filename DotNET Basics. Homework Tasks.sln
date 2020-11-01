@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic coding in CSharp", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic coding in CSharp Tests", "Basic coding in CSharp Tests\Basic coding in CSharp Tests.csproj", "{CF030BC4-8EE0-4AE3-A21E-B49B6CC52AB0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation. Inheritance. Polymorphism", "Encapsulation. Inheritance. Polymorphism\Encapsulation. Inheritance. Polymorphism.csproj", "{632F0429-4B08-4511-BCBF-2DB3B8AE499E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation. Inheritance. Polymorphism Tests", "Encapsulation. Inheritance. Polymorphism Tests\Encapsulation. Inheritance. Polymorphism Tests.csproj", "{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{CF030BC4-8EE0-4AE3-A21E-B49B6CC52AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF030BC4-8EE0-4AE3-A21E-B49B6CC52AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF030BC4-8EE0-4AE3-A21E-B49B6CC52AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{632F0429-4B08-4511-BCBF-2DB3B8AE499E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{632F0429-4B08-4511-BCBF-2DB3B8AE499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{632F0429-4B08-4511-BCBF-2DB3B8AE499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632F0429-4B08-4511-BCBF-2DB3B8AE499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
