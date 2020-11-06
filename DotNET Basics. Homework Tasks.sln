@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic coding in CSharp Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation. Inheritance. Polymorphism", "Encapsulation. Inheritance. Polymorphism\Encapsulation. Inheritance. Polymorphism.csproj", "{632F0429-4B08-4511-BCBF-2DB3B8AE499E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation. Inheritance. Polymorphism Tests", "Encapsulation. Inheritance. Polymorphism Tests\Encapsulation. Inheritance. Polymorphism Tests.csproj", "{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation. Inheritance. Polymorphism Tests", "Encapsulation. Inheritance. Polymorphism Tests\Encapsulation. Inheritance. Polymorphism Tests.csproj", "{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Object oriented design principles", "Object oriented design principles\Object oriented design principles.csproj", "{A9420107-A9E0-4642-B66E-6B8C73BFA851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object oriented design principles Tests", "Object oriented design principles Tests\Object oriented design principles Tests.csproj", "{090B3B9E-DC7C-4B35-B9AE-8EB0E80C8AB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C26FD68-E46D-4674-8D46-B9C5F1B9FCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9420107-A9E0-4642-B66E-6B8C73BFA851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9420107-A9E0-4642-B66E-6B8C73BFA851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9420107-A9E0-4642-B66E-6B8C73BFA851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9420107-A9E0-4642-B66E-6B8C73BFA851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090B3B9E-DC7C-4B35-B9AE-8EB0E80C8AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090B3B9E-DC7C-4B35-B9AE-8EB0E80C8AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090B3B9E-DC7C-4B35-B9AE-8EB0E80C8AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090B3B9E-DC7C-4B35-B9AE-8EB0E80C8AB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
